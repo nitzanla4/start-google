@@ -5,4 +5,9 @@ public class Bus implements Vechicle{
     public void transport(Passenger passenger) {
         System.out.println("Bus:" + passenger.getName());
     }
+
+    @Override
+    public String toString() {
+        return "Bus";
+    }
 }
