@@ -51,7 +51,7 @@ public class VehicleFactory {
             return Optional.empty();
         else
         {
-            int random = ThreadLocalRandom.current().nextInt();;
+            int random = ThreadLocalRandom.current().nextInt(4);;
             return Optional.ofNullable(avilableTypes.get(random));
         }
     }

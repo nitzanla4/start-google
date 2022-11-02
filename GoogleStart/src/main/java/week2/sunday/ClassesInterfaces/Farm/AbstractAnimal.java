@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public abstract class AbstractAnimal implements Animal {
     private static final AtomicInteger count = new AtomicInteger(0);
-    protected  final Gender gender;
+    protected Gender gender = null;
     protected int weight;
     protected final int id;
 
