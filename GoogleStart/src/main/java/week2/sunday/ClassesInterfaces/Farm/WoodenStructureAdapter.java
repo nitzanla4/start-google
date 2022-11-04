@@ -19,7 +19,7 @@ public class WoodenStructureAdapter implements  Animal{
         if (!(partner instanceof WoodenStructureAdapter)) {
             throw new IllegalArgumentException(" not matable");
         }
-        return createWoodenStructureAdapter(woodenHorse.createWoodenHorse());
+        return createWoodenStructureAdapter((WoodenHorse) woodenHorse.replicate());
     }
 
     @Override
